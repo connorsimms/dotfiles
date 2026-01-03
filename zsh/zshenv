@@ -1,7 +1,9 @@
 #!/usr/bin/env zsh
 
-export XDG_CONFIG_HOME="$HOME/.config"
 export DOTFILES="$HOME/.dotfiles"
+[[ -f "$ZDOTDIR/zshrc" ]] && source "$ZDOTDIR/zshrc"
+
+export XDG_CONFIG_HOME="$HOME/.config"
 
 export EDITOR="nvim"
 export VISUAL="nvim"
