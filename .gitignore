@@ -1,0 +1,9 @@
+tmux/plugins/
+vim/plugged
+vim/autoload
+.netrwhist
+*.sw[a-p]
+Session.vim
+*~
+.DS_Store
+.history
