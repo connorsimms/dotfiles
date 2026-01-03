@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+bindkey -v
+
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+PROMPT='%F{blue} %~ %f '
+
+alias ls="ls --color=auto"
+alias ll="ls -la"

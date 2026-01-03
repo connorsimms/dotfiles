@@ -10,6 +10,7 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.config/tmux: tmux
+    ~/.zshenv: zsh/zshenv
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
