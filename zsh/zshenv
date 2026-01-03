@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 
 export DOTFILES="$HOME/.dotfiles"
+export ZDOTDIR="$DOTFILES/zsh"
+
 [[ -f "$ZDOTDIR/zshrc" ]] && source "$ZDOTDIR/zshrc"
 
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -8,7 +10,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-export ZDOTDIR="$DOTFILES/zsh"
 export HISTFILE="$ZDOTDIR/.zsh_history"
 export HISTSIZE=10000
 export SAVEHIST=10000
