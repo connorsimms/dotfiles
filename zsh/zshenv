@@ -1,11 +1,12 @@
 #!/usr/bin/env zsh
 
 export XDG_CONFIG_HOME="$HOME/.config"
+export DOTFILES="$HOME/.dotfiles"
 
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export ZDOTDIR="$DOTFILES/zsh"
 export HISTFILE="$ZDOTDIR/.zsh_history"
 export HISTSIZE=10000
 export SAVEHIST=10000
