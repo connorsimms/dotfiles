@@ -3,7 +3,7 @@
       create: true
       relink: true
 
-- clean: ['~', '~/.config']
+- clean: ['~', '~/.config', '~/.dotfiles']
 
 - link:
     ~/.config/nvim: nvim
@@ -11,6 +11,7 @@
     ~/.vimrc: vimrc
     ~/.config/tmux: tmux
     ~/.zshenv: zsh/zshenv
+    ~/.config/zsh/.zshrc: zsh/zshrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
