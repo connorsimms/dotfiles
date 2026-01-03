@@ -8,7 +8,7 @@
 - link:
     ~/.config/nvim: nvim
     ~/.vim: vim
-    ~/.vimrc: vimrc
+    ~/.vimrc: vim/vimrc
     ~/.config/tmux: tmux
     ~/.zshenv: zsh/zshenv
     ~/.config/zsh/.zshrc: zsh/zshrc

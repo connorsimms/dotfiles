@@ -1,8 +1,5 @@
 tmux/plugins/
 !tmux/plugins/tpm
-vim/plugged
-vim/autoload
-.netrwhist
 *.sw[a-p]
 Session.vim
 *~
