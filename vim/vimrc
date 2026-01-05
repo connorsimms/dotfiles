@@ -86,3 +86,5 @@ nnoremap <Esc> :nohlsearch<CR>
 nnoremap <leader>pv :Ex<CR>
 tnoremap <Esc><Esc> <C-\><C-n>
 
+nnoremap <leader> <leader> <leader> <leader>l <Plug>NetrwRefresh 
+

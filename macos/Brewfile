@@ -4,6 +4,7 @@ brew "cmake"
 brew "python"
 
 brew "git"
+brew "gh"
 brew "vim"
 brew "neovim"
 brew "tmux"
