@@ -12,7 +12,7 @@ fi
 
 DOTFILES="$HOME/.dotfiles"
 
-if [ $OS" == "Darwin" ]; then
+if [ "$OS" == "Darwin" ]; then
 	echo "Running macOS setup..."
 
 	if ! command -v brew &> /dev/null; then
