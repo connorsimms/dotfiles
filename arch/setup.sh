@@ -35,6 +35,7 @@ install_group "Hyprland & Desktop" \
     qt5-wayland \
     qt6-wayland \
     ttf-0xproto-nerd \
+    capitaine-cursors \
     ly \
     rofi \
     hyprpaper \
