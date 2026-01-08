@@ -1,24 +1,38 @@
-brew "gcc"
-brew "llvm"
-brew "cmake"
-brew "python"
+tap "homebrew/bundle"
 
+# Core
+brew "gcc"
 brew "git"
+brew "cmake"
+brew "llvm"
+brew "python"
+brew "man-db"
+
+# Tools
 brew "gh"
 brew "vim"
 brew "neovim"
 brew "tmux"
-brew "bash"
 brew "zsh"
+brew "bash"
+brew "tlrc"
+brew "ripgrep"
+brew "fzf"
+brew "tree"
+brew "unzip"
+brew "rsync"
 
+# Desktop
+cask "nikitabobko/tap/aerospace"
+cask "karabiner-elements"
+cask "font-0xproto-nerd-font"
+tap "FelixKratz/formulae"
+brew "sketchybar"
+brew "borders"
+
+# Apps
 cask "kitty"
 cask "zen"
 cask "spotify"
 cask "discord"
 
-cask "font-0xproto-nerd-font"
-
-# stuff i want to add
-# cask "nikitabobko/tap/aerospace"
-# janky borders
-# sketchy bar

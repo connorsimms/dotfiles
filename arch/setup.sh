@@ -47,10 +47,12 @@ install_group "CLI Tools" \
     neovim \
     tmux \
     zsh \
+    bash \
     gdb \
     perf \
     tldr \
     ripgrep \
+    fzf \
     tree \
     unzip \
     rsync
