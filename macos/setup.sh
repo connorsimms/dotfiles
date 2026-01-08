@@ -1,3 +1,3 @@
 #!/bin/bash
 
-brew bundle install
+brew bundle install --file="$DOTFILES/macos/Brewfile"

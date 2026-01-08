@@ -8,7 +8,7 @@ if [ -d "$HOME/.dotfiles" ]; then
 	exit 1
 fi
 
-DOTFILES="$HOME/.dotfiles"
+export DOTFILES="$HOME/.dotfiles"
 
 if [ "$OS" == "Darwin" ]; then
 	echo "Running macOS setup..."
