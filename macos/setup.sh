@@ -1,3 +1,3 @@
 #!/bin/bash
 
-brew bundle --file="$DOTFILES/Brewfile"
+brew bundle --file="$DOTFILES/macos/Brewfile"
