@@ -4,7 +4,7 @@ OS="$(uname -s)"
 echo "OS: $OS"
 
 if [ -d "$HOME/.dotfiles" ]; then
-	echo "~/.dotfiles already exists"
+	echo "~.dotfiles already exists"
 	exit 1
 else
 	mkdir "$HOME/.dotfiles"
@@ -34,7 +34,7 @@ if [ "$OS" == "Darwin" ]; then
 	echo "Configuring settings..."
 	source "$DOTFILES/macos/link.sh"
 
-elif [ "$OS" == "Linux" ]
+elif [ "$OS" == "Linux" ]; then
 	echo "Running Arch Linux setup..."
 
 	if ! command -v git &> /dev/null; then
