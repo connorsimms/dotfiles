@@ -24,7 +24,7 @@ brew "unzip"
 brew "rsync"
 
 # Desktop
-cask "aerospace"
+cask "nikitabobko/tap/aerospace"
 cask "karabiner-elements"
 cask "font-0xproto-nerd-font"
 cask "font-hack-nerd-font"
