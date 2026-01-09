@@ -26,9 +26,6 @@ brew "rsync"
 cask "nikitabobko/tap/aerospace"
 cask "karabiner-elements"
 cask "font-0xproto-nerd-font"
-tap "FelixKratz/formulae"
-brew "sketchybar"
-brew "borders"
 
 # Apps
 cask "kitty"
