@@ -10,6 +10,12 @@ fi
 
 export DOTFILES="$HOME/.dotfiles"
 
+if [ -d "$DOTFILES" ]; then
+    git -C "$DOTFILES" pull origin main || echo "Git pull failed"
+else
+    git clone https://github.com/connorsimms/dotfiles.git "$DOTFILES"
+fi
+
 if [ "$OS" == "Darwin" ]; then
 	echo "Running macOS setup..."
 
@@ -18,15 +24,17 @@ if [ "$OS" == "Darwin" ]; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	fi
         
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+    if [ -f "/opt/homebrew/bin/brew" ]; then
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    elif [ -f "/usr/local/bin/brew" ]; then
+        eval "$(/usr/local/bin/brew shellenv)"
+    fi
 
-	if ! command -v git &> /dev/null; then
-		echo "Git not found. Installing with Homebrew..."
-		brew install git
-	fi
+    if ! command -v git &> /dev/null; then
+        brew install git
+    fi
 
-	echo "Cloning dotfiles..."
-	git clone https://github.com/connorsimms/dotfiles.git "$DOTFILES"
+    brew update
 
 	echo "Installing packages..."	
 	bash "$DOTFILES/macos/setup.sh"
@@ -42,9 +50,6 @@ elif [ "$OS" == "Linux" ]; then
 		sudo pacman -S git --noconfirm
 	fi
 	
-	echo "Cloning dotfiles..."
-	git clone https://github.com/connorsimms/dotfiles.git "$DOTFILES"
-
 	echo "Installing packages..."
 	bash "$DOTFILES/arch/setup.sh"
 
