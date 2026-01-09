@@ -27,6 +27,7 @@ brew "rsync"
 cask "aerospace"
 cask "karabiner-elements"
 cask "font-0xproto-nerd-font"
+cask "font-hack-nerd-font"
 brew "felixkratz/formulae/sketchybar"
 brew "felixkratz/formulae/borders"
 
